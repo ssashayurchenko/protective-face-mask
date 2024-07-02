@@ -67,10 +67,6 @@
   margin-left: 10px;
 }
 
-.factory__lab-content-phone p {
-  margin: 0;
-}
-
 .factory__lab-content-phone a {
   margin-top: 5px;
 }
@@ -150,17 +146,10 @@
     justify-content: space-around;
     flex-direction: row;
     height: 40vh;
-    margin: 0;
-  }
-
-  .factory__lab-content-text-two,
-  .factory__lab-content-text-three {
-    margin: 0;
   }
 
   .factory__lab-content-third {
     height: 40vh;
-    margin-top: 0;
   }
 }
 
@@ -168,16 +157,11 @@
   .factory__lab-content {
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 30px;
   }
-
-  .factory__lab-content-first {
-    background-image: none;
-    background-color: var(--saturated-blue-color);
-    background-size: auto;
-    background-position: initial;
-    background-repeat: no-repeat;
-    padding: 0;
+  .factory__lab-left-content,
+  .factory__lab-right-content {
+    width: 100%;
   }
 }
 /*Certification section*/

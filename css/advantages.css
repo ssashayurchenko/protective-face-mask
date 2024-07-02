@@ -1,6 +1,6 @@
 /* General styles */
 .factory__advantages {
-  padding: 100px;
+  padding: 30px;
   width: 100%;
 }
 
@@ -35,7 +35,7 @@
 }
 
 /* Adaptive design */
-@media (min-width: 320px) {
+@media (max-width: 600px) {
   .factory__advantages-card {
     flex-direction: column;
     align-items: center;
@@ -51,10 +51,16 @@
   .factory__advantages-card-list {
     grid-template-columns: 1fr 1fr;
   }
+  .factory__advantages-card-mark {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
   .factory__advantages-card-list {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .factory__advantages-card-mark {
+    margin-right: 20px;
   }
 }

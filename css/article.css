@@ -1,14 +1,9 @@
 /* General styles */
 .factory__article-about-respirators {
   width: 100%;
-  padding: 100px;
 }
 article {
   margin-bottom: 50px;
-}
-
-article img {
-  display: block;
 }
 
 article h2 {
@@ -27,6 +22,9 @@ article p {
 
 /* Adaptive design */
 @media (min-width: 800px) {
+  .factory__article-about-respirators {
+    padding: 100px;
+  }
   article {
     display: flex;
     align-items: center;
@@ -38,7 +36,7 @@ article p {
 
   .factory__article-image-first {
     order: 1;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   .factory__article-text-first {
@@ -47,7 +45,7 @@ article p {
 
   .factory__article-image-second {
     order: 2;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .factory__article-text-second {
@@ -56,13 +54,16 @@ article p {
 }
 
 @media (max-width: 800px) {
+  .factory__article-about-respirators {
+    padding: 30px;
+  }
   article {
     display: block;
     padding-bottom: 20px;
   }
 
   article img {
-    width: 300px;
+    max-width: 200px;
     align-self: center;
   }
 
