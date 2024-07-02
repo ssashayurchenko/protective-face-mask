@@ -1,0 +1,75 @@
+/* General styles */
+.factory__article-about-respirators {
+  width: 100%;
+  padding: 50px;
+}
+article {
+  margin-bottom: 50px;
+}
+
+article img {
+  display: block;
+}
+
+article h2 {
+  font-family: var(--font-family-primary);
+  color: var(--dark-black-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+article p {
+  text-align: justify;
+  font-family: var(--font-family-secondary);
+  color: var(--dark-gray-color);
+}
+
+/* Adaptive design */
+@media (min-width: 800px) {
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  article img {
+    width: 300px;
+  }
+
+  .factory__article-image-first {
+    order: 1;
+    margin-right: 20px;
+  }
+
+  .factory__article-text-first {
+    order: 2;
+  }
+
+  .factory__article-image-second {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .factory__article-text-second {
+    order: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  article {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  article img {
+    width: 300px;
+    align-self: center;
+  }
+
+  .factory__article-image-first,
+  .factory__article-image-second {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}

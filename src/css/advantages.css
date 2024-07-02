@@ -1,0 +1,60 @@
+/* General styles */
+.factory__advantages {
+  padding: 50px;
+  width: 100%;
+}
+
+.factory__advantages-card-list {
+  display: grid;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.factory__advantages-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.factory__advantages-card-mark {
+  width: 25px;
+}
+
+.factory__advantages-card-text h3 {
+  font-family: var(--font-family-secondary);
+  color: var(--dark-black-color);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.factory__advantages-card-text p {
+  font-family: var(--font-family-secondary);
+  color: var(--dark-gray-color);
+  font-size: 15px;
+}
+
+/* Adaptive design */
+@media (min-width: 320px) {
+  .factory__advantages-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .factory__advantages-card-mark {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .factory__advantages-card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .factory__advantages-card-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

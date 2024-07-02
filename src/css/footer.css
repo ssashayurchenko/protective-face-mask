@@ -1,0 +1,121 @@
+/* General styles */
+.footer__nav {
+  background-color: var(--pale-blue-color);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+}
+
+.footer__web-site-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer__text {
+  font-family: var(--font-family-secondary);
+  color: var(--dark-gray-color);
+}
+
+.footer__menu-item {
+  list-style: none;
+}
+
+.footer__menu-item a,
+.footer__social-media a {
+  font-family: var(--font-family-secondary);
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+.footer__menu-item a:hover,
+.footer__social-media a:hover {
+  background-color: transparent;
+  color: var(--saturated-blue-color);
+}
+
+.footer__menu-item li,
+.footer__social-media li {
+  margin-bottom: 10px;
+}
+.footer__menu-item h4,
+.footer__follow-us h4 {
+  padding-bottom: 10px;
+  font-family: var(--font-family-primary);
+  color: var(--dark-black-color);
+}
+
+.footer__follow-us {
+  display: flex;
+  margin-left: 30%;
+}
+
+.footer__follow-us img {
+  width: 30px;
+  height: 180px;
+  margin-right: 20px;
+}
+
+.footer__social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Adaptive design */
+@media (min-width: 1000px) {
+  .footer__left-container {
+    width: 45%;
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__right-container {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__left-container,
+  .footer__right-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__left-container {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__web-site-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__menu-item {
+    text-align: center;
+  }
+
+  .footer__social-media {
+    align-items: center;
+  }
+}

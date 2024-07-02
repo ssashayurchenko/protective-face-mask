@@ -1,0 +1,78 @@
+/* General styles */
+.header__hero {
+  padding-right: 50%;
+  padding-left: 3%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header__hero-title h1 {
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: var(--dark-black-color);
+}
+
+p.header__bottom-text {
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--dark-gray-color);
+}
+
+p.header__top-text {
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  color: var(--warm-yellow-color);
+}
+
+.header__button {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+
+.header__button a {
+  font-family: var(--font-family-primary);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__button-shop-now {
+  background-color: var(--saturated-blue-color);
+  color: var(--main-white-color);
+}
+
+.header__button-shop-now:hover {
+  background-color: var(--light-blue-color);
+  color: var(--saturated-blue-color);
+}
+
+.header__button-learn-more {
+  background-color: transparent;
+  border: 1px solid var(--warm-yellow-color);
+  color: var(--warm-yellow-color);
+}
+
+.header__button-learn-more:hover {
+  background-color: var(--warm-yellow-color);
+  color: var(--main-white-color);
+}
+
+/* Adaptive design */
+@media (max-width: 800px) {
+  .header__hero {
+    background-color: #f7fdfb;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+}

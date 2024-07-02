@@ -1,0 +1,128 @@
+/* General styles */
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.reasons__main-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons__main-text h2 {
+  font-family: var(--font-family-primary);
+  color: var(--dark-black-color);
+}
+
+.reasons__main-text p {
+  font-family: var(--font-family-secondary);
+  color: var(--dark-gray-color);
+}
+
+.reasons__section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.reasons__section > div {
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+}
+
+.reasons__section-text {
+  flex: 1;
+  font-size: 15px;
+  font-family: var(--font-family-secondary);
+}
+
+.reasons__section-text h4 {
+  color: var(--dark-black-color);
+}
+
+.reasons__section-text p {
+  color: var(--dark-gray-color);
+}
+
+.reasons__section-icon {
+  max-width: 40px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+}
+
+/* Adaptive design */
+@media (max-width: 800px) {
+  .reasons__left-container {
+    display: none;
+  }
+
+  .reasons__right-container {
+    max-width: 100%;
+  }
+
+  .reasons__main-text {
+    text-align: justify;
+    align-items: center;
+
+    padding-bottom: 40px;
+  }
+
+  .reasons__main-text h2 {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .reasons__left-container {
+    flex: 1;
+    max-width: 35%;
+    align-self: center;
+  }
+
+  .reasons__left-container img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .reasons__right-container {
+    flex: 1;
+    max-width: 60%;
+  }
+  .reasons__main-text {
+    padding-bottom: 20px;
+  }
+
+  .reasons__main-text h2 {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reasons__left-container {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .reasons__left-container img {
+    width: 300px;
+    height: auto;
+  }
+
+  .reasons__right-container {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .reasons__main-text {
+    padding-bottom: 40px;
+  }
+
+  .reasons__main-text h2 {
+    padding-bottom: 20px;
+  }
+}
