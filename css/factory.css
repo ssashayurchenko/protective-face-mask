@@ -1,9 +1,9 @@
+/*Factory section*/
 /*General styles */
 .factory__lab-content {
-  padding: 50px;
   display: flex;
-  height: 100vh;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .factory__lab-content-text-one {
@@ -119,7 +119,10 @@
 }
 
 /* Adaptive design */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
+  .factory__lab-content {
+    padding: 100px;
+  }
   .factory__lab-left-content {
     height: 80vh;
     display: flex;
@@ -161,28 +164,101 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .factory__lab-content {
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-  }
-  .factory__lab-content-first {
-    background-image: url(../img/advantages/lab-factory.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-  }
-  .factory__lab-left-content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
+    padding: 100px;
   }
 
-  .factory__lab-right-content {
-    height: 50vh;
-    display: flex;
+  .factory__lab-content-first {
+    background-image: none;
+    background-color: var(--saturated-blue-color);
+    background-size: auto;
+    background-position: initial;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+}
+/*Certification section*/
+/* General styles */
+.lab__certification {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lab__certification-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab__certification-info p {
+  font-family: var(--font-family-secondary);
+  color: var(--dark-gray-color);
+  margin: 0;
+  flex: 1;
+}
+
+.lab__certification-info img {
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.lab__certification-image {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+/* Adaptive design */
+@media (max-width: 900px) {
+  .lab__certification {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .lab__certification-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lab__certification-info img {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .lab__certification-image {
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lab__certification-image img {
+    max-width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 900px) {
+  .lab__certification {
+    padding-left: 30px;
+  }
+
+  .lab__certification-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lab__certification-info p {
+    padding-right: 30px;
   }
 }
